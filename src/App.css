@@ -1,0 +1,141 @@
+/* App.css */
+body {
+  background-color: #f2e9ff; /* Mild violet background */
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #5e60ce; /* Mild violet for headings */
+}
+
+.vibrant-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #5e60ce; /* Mild violet */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vibrant-button {
+  background-color: #8338ec; /* Rich violet for buttons */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border-radius: 8px; /* Rounded corners for modern look */
+}
+
+.vibrant-button:hover {
+  background-color: #5e60ce; /* Lighter violet on hover */
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.container {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #8338ec;
+  box-shadow: 0 0 10px rgba(131, 56, 236, 0.3);
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  background-color: #3a0ca3; /* Dark violet for card background */
+  color: white;
+  text-align: center;
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.clickable-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.clickable-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container h2 {
+  font-weight: 700;
+}
+
+input, select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+  border-color: #5e60ce;
+  outline: none;
+  box-shadow: 0 0 5px rgba(94, 96, 206, 0.5);
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #5e60ce; /* Lighter violet for card content */
+  border-radius: 12px;
+}
+
+.card-body:hover {
+  background-color: #7209b7; /* Slightly darker on hover */
+}
+
+
+      /*Loadingpage.js */
+
+/* src/LoadingScreen.css */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2e9ff; /* Mild violet background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999; /* Keep it above everything else */
+}
+
+.app-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #5e60ce; /* Mild violet */
+  animation: fadeInOut 2s ease-in-out infinite;
+  letter-spacing: 5px;
+}
+
+.loading-spinner {
+  margin-top: 20px;
+  color: #8338ec; /* Rich violet for spinner */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
