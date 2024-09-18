@@ -1,4 +1,5 @@
-// src/LoadingScreen.js
+//src/LoadingScreen.js
+
 import React, { useState, useEffect } from "react";
 import { Spinner, Container, Row, Col } from "react-bootstrap";
 import './App.css'; // Import the custom CSS
@@ -16,12 +17,13 @@ const LoadingScreen = () => {
 
   return (
     loading && (
-      <div className="loading-screen">
+      <div className={`loading-screen ${!loading ? 'fade-out' : ''}`}>
         <Container fluid className="text-center d-flex flex-column justify-content-center align-items-center">
           <Row>
             <Col>
               <div className="app-name">
-                SNIPPETLAB
+                <strong ><h1 className="load-name"><b>SNIPPETLAB</b></h1></strong>
+                
               </div>
             </Col>
           </Row>

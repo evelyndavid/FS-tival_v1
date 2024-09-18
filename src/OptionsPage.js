@@ -5,7 +5,8 @@ import "./App.css";
 const OptionsPage = () => {
   return (
     <Container className="mt-5">
-      <h2 className="text-center vibrant-heading mb-5">Choose an Option</h2>
+      <h2 className="text-center vibrant-heading mb-5" style={{ marginTop: '70px' }}>Choose an Option</h2>
+
       <Row className="justify-content-center">
         <Col md={4}>
           <Card

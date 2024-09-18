@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Container, Button, Form } from "react-bootstrap";
 import "./App.css"; // For additional vibrant CSS
 
-const UserInput = ({ setPage }) => {
+const UserInput = ({ setPage, onNameChange }) => {
   const [name, setName] = useState("");
   const [occupation, setOccupation] = useState("");
 
   const handleProceed = () => {
     if (name && occupation) {
+      onNameChange(name); // Pass the name up to the parent component
       setPage("options");
     } else {
       alert("Please fill all fields.");
@@ -50,3 +51,4 @@ const UserInput = ({ setPage }) => {
 };
 
 export default UserInput;
+
